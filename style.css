@@ -854,9 +854,7 @@ grid-template-columns: 1fr 1fr;
     .section__title {
         font-size: 28px;
     }
-    .services__item-img {
-      height: 200px;
-    }
+
     .services__item-title {
         font-size: 24px;
         font-weight: 700;
@@ -868,6 +866,9 @@ grid-template-columns: 1fr 1fr;
     }
     .services__item:first-child {
         grid-column: 1;
+    }
+    .services__item-hidden {
+        padding: 10px;
     }
 }
 @media (max-width:530px) {
