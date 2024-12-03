@@ -735,6 +735,7 @@ grid-template-columns: 1fr 1fr;
     position: relative;
     width: 500px;
     height: 500px;
+    
 }
 .about__img-wrapper::before {
     content: '';
@@ -751,7 +752,9 @@ grid-template-columns: 1fr 1fr;
     width: 100%;
     height: 100%;
     position: relative;
+    object-position: bottom;
     border-radius: 0px 0px  200px;
+   
 }
 .footer {
     padding: 30px 0;
@@ -904,6 +907,14 @@ grid-template-columns: 1fr 1fr;
     .about__img-wrapper {
         width: 100%;
         height: 100%;
+        overflow: hidden;
+    }
+    .about__img-wrapper::before {
+        border-radius: 150px 150px 0 0;
+    }
+    .about__img {
+        border-radius: 0px;
+        bottom: -5px;
     }
     
 }
